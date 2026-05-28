@@ -14,19 +14,20 @@ BASE_DIR = Path(__file__).resolve().parent
 MODEL_CANDIDATES = [
     BASE_DIR / "brfss_model.pkl",
     BASE_DIR / "brfss_model(1).pkl",
+    BASE_DIR / "brfss_model (1).pkl",
 ]
 
 SCALER_CANDIDATES = [
     BASE_DIR / "brfss_scaler.pkl",
     BASE_DIR / "brfss_scaler(1).pkl",
+    BASE_DIR / "brfss_scaler (1).pkl",
 ]
 
 FEATURES_CANDIDATES = [
     BASE_DIR / "brfss_features.pkl",
     BASE_DIR / "brfss_features(1).pkl",
+    BASE_DIR / "brfss_features (1).pkl",
 ]
-
-
 def find_existing_file(possible_paths, file_description):
     for path in possible_paths:
         if path.exists():
